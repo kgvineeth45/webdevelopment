@@ -6,7 +6,7 @@
 
 .navbar{
 	border-radius: 0px;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.2);
 }
 
 .navbar-brand{
@@ -81,7 +81,7 @@ li{
 	width: auto;
 	height: auto;
 	color: blue;
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.7);
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	padding: 20px;
 }
