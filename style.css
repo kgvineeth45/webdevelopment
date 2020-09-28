@@ -1,97 +1,46 @@
+// ******************************* 
+// START HERE IF YOU WANT AN EASIER STARTING POINT FOR THIS ASSIGNMENT
+// *******************************
+//
+// Module 4 Assignment Instructions.
+//
+// The idea of this assignment is to take an existing array of names
+// and then output either Hello 'Name' or Good Bye 'Name' to the console.
+// The program should say "Hello" to any name except names that start with a "J"
+// or "j", otherwise, the program should say "Good Bye". So, the final output
+// on the console should look like this:
+/*
+Hello Yaakov
+Good Bye John
+Good Bye Jen
+Good Bye Jason
+Hello Paul
+Hello Frank
+Hello Larry
+Hello Paula
+Hello Laura
+Good Bye Jim
+WARNING!!! WARNING!!!
+The code does NOT currently work! It is YOUR job to make it work
+as described in the requirements and the steps in order to complete this
+assignment.
+WARNING!!! WARNING!!!
+*/
 
-.container-fluid{
-	margin: 0;
-	padding: 0;
+
+(function () {
+
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+for (var i = 0; i < names.length; i++) {
+  var firstLetter = names[i].charAt(0).toLowerCase();
+
+  if (firstLetter === 'j') {
+    byeSpeaker(names[i]);
+  }
+  else {
+    helloSpeaker(names[i]);
+  }
 }
 
-.navbar{
-	border-radius: 0px;
-	background-color: rgba(0,0,0,0.2);
-}
-
-.navbar-brand{
-  font-size: 35px;
-  color: white;
-  padding-left: 25px;
-}
-
-.navbar-brand:hover{
-	color: white;
-}
-
-.nav{
-	margin: 0;
-	padding: 0;
-}
-
-.navbar-nav{
-  font-size: 25px;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-toggle{
-	border: 2px solid white;
-	margin-right: 25px;
-}
-
-.icon-bar{
-	background-color: white;
-}
-
-
-.main-title{
-  margin-bottom: 15px;
-  text-align: center;
-  color: #ff4532;
-  font-size: 50px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-weight: bold;
-}
-
-li{
-	box-sizing: border-box;
-	width: 100%;
-}
-
-.menu-item{
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	background-color: white;
-	border-bottom: 1px solid black;
-	color: black;
-	display: block;
-}
-
-.menu-item:hover{
-	background-color: rgba(0,0,0,0.9);
-	color: rgba(0,0,0,0.4);
-}
-
-
-
-.row{
-	margin: 20px;
-}
-
-.content-box{
-	margin: 20px;
-	width: auto;
-	height: auto;
-	color: blue;
-	background-color: rgba(0,0,0,0.7);
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	padding: 20px;
-}
-
-.item-name{
-	text-align: center;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-#top{
-
-}
+})();
